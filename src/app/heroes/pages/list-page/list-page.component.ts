@@ -8,6 +8,7 @@ import { Hero } from 'src/app/interfaces/hero.interface';
   styles: []
 })
 export class ListPageComponent implements OnInit {
+ 
   public heroes: Hero[] = [];
 
   constructor (private heroesService: HeroesService) {}

@@ -4,7 +4,7 @@ import { Hero } from 'src/app/interfaces/hero.interface';
 @Component({
   selector: 'heroes-hero-card',
   templateUrl: './card.component.html',
-  styles: [
+  styles: [ 
   ]
 })
 export class CardComponent implements OnInit {

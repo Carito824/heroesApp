@@ -11,6 +11,7 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,15 +23,20 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
     NewPageComponent,
     SearchPageComponent,
     CardComponent,
-    HeroImagePipe,
+   
     
     //Pipes
-  
+    HeroImagePipe,
+    //ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    
   ]
 })
 export class HeroesModule { }
